@@ -15,9 +15,10 @@ public class SearchTest extends BaseTest {
 //       WebElement search = driver.findElement(By.name("q"));
 //       search.sendKeys("facebook");
 //       search.sendKeys(Keys.ENTER);
-//        search.submit();
+//       search.submit();
         GooglePage google = new GooglePage(driver);
         google.setSearch("facebook");
+
         google.submitSearch();
         SearchPage searchPage = new SearchPage(driver);
 
